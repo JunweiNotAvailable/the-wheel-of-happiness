@@ -17,7 +17,7 @@ export const resources = {
       title_mind: 'Mind (心靈)',
       title_soul: 'soul (身體)',
       title_family: 'family (身體)',
-      title_romantce: 'romantce (身體)',
+      title_romance: 'romance (身體)',
       title_friends: 'friends (身體)',
       title_mission: 'mission (身體)',
       title_money: 'money (身體)',
