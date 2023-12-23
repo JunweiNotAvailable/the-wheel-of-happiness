@@ -9,3 +9,26 @@
 .top-section i {
   padding: 4px;
 }
+.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.option {
+  margin: 12px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: .4rem;
+  padding: 8px;
+  box-sizing: border-box;
+  background: #fff;
+  font-weight: 600;
+}
+.option.selected {
+  border-color: var(--main-color);
+  background: var(--main-color-background);
+}
+.option img {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}

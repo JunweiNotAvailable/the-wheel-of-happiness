@@ -3,6 +3,8 @@
 
 :root {
   --main-color: #f2b830;
+  --main-color-background: #fdf4df;
+  --main-color-disabled: #f6e1b1;
   --main-color-transparent: #f2b83044;
 }
 body {
