@@ -37,7 +37,9 @@ const Process: React.FC<MainProps> = ( props ) => {
       localStorage.setItem(wheelOfLifePage, `${props.page + 1}`);
       setTimeout(() => props.setPage(props.page + 1), 300);
     } else { // check if completed or not
-      
+      if (Object.values(props.score).filter(v => v === 0).length > 0) {
+        
+      }
     }
   }
 
