@@ -16,13 +16,13 @@ const Results: React.FC<MainProps> = ( props ) => {
         </div>
         {/* pie chart */}
         <div className='center' style={{ marginTop: 24 }}>
-          <div className='wheel'>
+          <figure className='wheel'>
             {names.map((name, i) => {
               return (
-                <div></div>
+                <circle></circle>
               )
             })}
-          </div>
+          </figure>
         </div>
 
       </div>
