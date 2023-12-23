@@ -10,3 +10,5 @@ An app let you take a look at your current level of happiness in **9 aspects of 
 <img src="https://github.com/JunweiNotAvailable/the-wheel-of-happiness/blob/master/public/logo.png?raw=true" alt="drawing" width="160"/>
 
 <!-- [Link to the app](https://wheel-of-happiness.com) -->
+
+Idea inspired by Ali Abdaal's [video](https://www.youtube.com/watch?v=c_DOG_mXz5w&t=67s). 
