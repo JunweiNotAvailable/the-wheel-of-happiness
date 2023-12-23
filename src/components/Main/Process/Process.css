@@ -1,0 +1,11 @@
+.progress-screen {
+  box-sizing: border-box;
+  padding: 8px;
+}
+.top-section {
+  color: #757575;
+  font-size: 24px;
+}
+.top-section i {
+  padding: 4px;
+}

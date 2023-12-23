@@ -3,7 +3,7 @@ export interface Score {
   mind: number
   soul: number
   family: number
-  romantic: number
+  romantce: number
   friends: number
   mission: number
   money: number
