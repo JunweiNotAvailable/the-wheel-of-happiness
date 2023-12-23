@@ -19,7 +19,7 @@ const Login: React.FC<MainProps> = ( props ) => {
   }
 
   return (
-    <div className='login-screen relative'>
+    <div className='main-screen relative'>
 
       {/* background */}
       <img className='background' src='./images/hot-air-balloon.png'/>
