@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Process.css';
 import { MainProps } from '../Main'
 import { useTranslation } from 'react-i18next';
@@ -37,8 +37,10 @@ const Process: React.FC<MainProps> = ( props ) => {
       localStorage.setItem(wheelOfLifePage, `${props.page + 1}`);
       setTimeout(() => props.setPage(props.page + 1), 300);
     } else { // check if completed or not
-      if (Object.values(props.score).filter(v => v === 0).length > 0) {
-        
+      console.log(props.score)
+      if (Object.values(props.score).filter(v => v === 0).length === 0) {
+        localStorage.setItem(wheelOfLifePage, `${props.page + 1}`);
+        setTimeout(() => props.setPage(props.page + 1), 300);
       }
     }
   }
@@ -47,7 +49,7 @@ const Process: React.FC<MainProps> = ( props ) => {
     <div className='main-screen relative'>
 
       {/* background */}
-      <img className='background' src={`./images/${props.page <= 3 ? 'health.jpg' : props.page <= 6 ? 'relationships.png' : 'work.png'}`}/>
+      <img className='background' alt='' src={`./images/${props.page <= 3 ? 'health.jpg' : props.page <= 6 ? 'relationships.png' : 'work.png'}`}/>
 
       {/* main components */}
       <div className='progress-screen absolute' style={{ top: 0, left: 0, width: '100%', height: '100%', background: '#ffffffdd' }}>
@@ -64,7 +66,7 @@ const Process: React.FC<MainProps> = ( props ) => {
           {scoreOptions.map((option, i) => {
             return (
               <button key={`btn-${i}`} className={`option flex align-center${i + 1 === props.score[names[props.page - 1] as keyof typeof props.score] ? ' selected' : ''}`} onClick={() => handleSelect(i + 1)}>
-                <img src={`./images/${option.img}`}/>
+                <img alt='' src={`./images/${option.img}`}/>
                 {i + 1} {t(option.name)}
               </button>
             )

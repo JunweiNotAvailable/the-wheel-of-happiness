@@ -5,3 +5,14 @@ export const names = ['body', 'mind', 'soul', 'family', 'romance', 'friends', 'm
 export const wheelOfLifeName = 'wheel-of-life-name';
 export const wheelOfLifeScore = 'wheel-of-life-score';
 export const wheelOfLifePage = 'wheel-of-life-page';
+
+export const animals = [
+  { type: 'snail', score: [0, 0, 0], img: '' },
+  { type: 'beaver', score: [0, 0, 1], img: '' },
+  { type: 'firefly', score: [0, 1, 0], img: '' },
+  { type: 'ant', score: [0, 1, 1], img: '' },
+  { type: 'antelope', score: [1, 0, 0], img: '' },
+  { type: 'eagle', score: [1, 0, 1], img: '' },
+  { type: 'dolphin', score: [1, 1, 0], img: '' },
+  { type: 'lion', score: [1, 1, 1], img: '' },
+];

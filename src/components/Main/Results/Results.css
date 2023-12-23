@@ -1,0 +1,11 @@
+.results-screen {
+  box-sizing: border-box;
+  padding: 8px;
+}
+.wheel {
+  width: 80%;
+  aspect-ratio: 1/1;
+  max-width: 280px;
+  border-radius: 50%;
+  border: 1.4px solid #666;
+}

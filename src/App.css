@@ -6,6 +6,16 @@
   --main-color-background: #fdf4df;
   --main-color-disabled: #f6e1b1;
   --main-color-transparent: #f2b83044;
+
+  --color-1: #eed056;
+  --color-2: #ec1c24;
+  --color-3: #7be7ba;
+  --color-4: #e0a21b;
+  --color-5: #ed8fad;
+  --color-6: #3c42f4;
+  --color-7: #0ed145;
+  --color-8: #00a8f3;
+  --color-9: #afa7dc;
 }
 body {
   margin: 0;

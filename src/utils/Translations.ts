@@ -39,6 +39,15 @@ export const resources = {
       its_ok: '還可以啦！',
       good: '不錯啊！',
       happy: '快樂~',
+
+      snail: '蝸牛',
+      beaver: '河狸',
+      firefly: '螢火蟲',
+      ant: '螞蟻',
+      antelope: '羚羊',
+      eagle: '老鷹',
+      dolphin: '海豚',
+      lion: '獅子',
     }
   },
 };
