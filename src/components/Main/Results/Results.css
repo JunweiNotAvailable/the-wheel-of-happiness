@@ -1,11 +1,12 @@
 .results-screen {
   box-sizing: border-box;
   padding: 8px;
+  background: var(--secondary-color-background);
 }
-.wheel {
+.wheel-container {
+  max-width: 400px;
+  width: 95%;
+}
+.animal-img {
   width: 80%;
-  aspect-ratio: 1/1;
-  max-width: 280px;
-  border-radius: 50%;
-  border: 1.4px solid #666;
 }
