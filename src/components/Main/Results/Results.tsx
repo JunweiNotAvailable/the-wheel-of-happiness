@@ -83,7 +83,9 @@ const Results: React.FC<MainProps> = ( props ) => {
         </div>
         {/* animal */}
         <div style={{ fontSize: 18, fontWeight: 600, textAlign: 'center' }}><span style={{ fontWeight: 400, fontSize: 16 }}>你是</span> {t(animal.type)}</div>
-        <img className='animal-img' alt='' style={{ margin: '8px 0' }} src={`./images/${animal.img}`}/>
+        <div className='center'>
+          <img className='animal-img' alt='' style={{ margin: '8px 0' }} src={`./images/${animal.img}`}/>
+        </div>
         <div style={{ margin: '12px 24px', textAlign: 'center' }}>{t(`${animal.type}_description`)}</div>
       </div>
 
