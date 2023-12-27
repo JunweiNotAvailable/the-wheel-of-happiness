@@ -15,5 +15,5 @@ export const animals = [
   { type: 'antelope', score: [1, 0, 0], img: 'antelope.png' },
   { type: 'eagle', score: [1, 0, 1], img: 'eagle.png' },
   { type: 'dolphin', score: [1, 1, 0], img: 'dolphin.png' },
-  { type: 'lion', score: [1, 1, 1], img: 'lion.png' },
+  { type: 'orca', score: [1, 1, 1], img: 'orca.png' },
 ];

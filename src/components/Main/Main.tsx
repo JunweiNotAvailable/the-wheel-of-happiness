@@ -12,13 +12,14 @@ export interface MainProps {
   setScore: React.Dispatch<React.SetStateAction<Score>>
   page: number 
   setPage: React.Dispatch<React.SetStateAction<number>>
+  reset?: () => void
 }
 
 const Main = () => {
 
   const [name, setName] = useState('');
   const [score, setScore] = useState(initialScore);
-  const [page, setPage] = useState(0); // save data only when page changes 
+  const [page, setPage] = useState(0); // save data only when page changes
   const props = { name, setName, score, setScore, page, setPage };
 
   // initial effect
@@ -32,14 +33,24 @@ const Main = () => {
     }
   }, []);
 
+  // reset function
+  const reset = () => {
+    localStorage.removeItem(wheelOfLifeName);
+    localStorage.removeItem(wheelOfLifePage);
+    localStorage.removeItem(wheelOfLifeScore);
+    setName('');
+    setScore(initialScore);
+    setPage(0);
+  }
+
   return (
     <div className='app main'>
       {page === 0 ? 
         <Login {...props}/> 
       : page < 10 ?
-        <Process {...props}/>
+        <Process {...props} reset={reset}/>
       :
-        <Results {...props}/>}
+        <Results {...props} reset={reset}/>}
     </div>
   )
 }

@@ -32,3 +32,32 @@
   height: 32px;
   margin-right: 12px;
 }
+
+/* popup */
+.popup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00000044;
+}
+.popup {
+  width: 90%;
+  max-width: 360px;
+  box-sizing: border-box;
+  padding: 32px 24px;
+  background: var(--main-color-background);
+  border-radius: 1rem;
+}
+.popup-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.popup-content {
+  text-align: center;
+}

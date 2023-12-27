@@ -39,6 +39,14 @@ body * {
   cursor: pointer;
   font-weight: bold;
 }
+.secondary-button {
+  background: #e3ddd1;
+  border-radius: .4rem;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
 
 .relative {
   position: relative;
@@ -53,6 +61,9 @@ body * {
 }
 .flex-v {
   flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
 }
 .flex {
   display: flex;
