@@ -57,9 +57,9 @@ const Results: React.FC<MainProps> = ( props ) => {
   useEffect(() => {
     // calculate the score
     const averageScore = [
-      Math.round(scores.slice(0, 3).map(s => s <= 3 ? 0 : 1).reduce((sum: number, v: number) => sum + v, 0) / 3),
-      Math.round(scores.slice(3, 6).map(s => s <= 3 ? 0 : 1).reduce((sum: number, v: number) => sum + v, 0) / 3),
-      Math.round(scores.slice(6, 9).map(s => s <= 3 ? 0 : 1).reduce((sum: number, v: number) => sum + v, 0) / 3),
+      scores.slice(0, 3).reduce((sum: number, v: number) => sum + v, 0) / 3 > 3 ? 1 : 0,
+      scores.slice(3, 6).reduce((sum: number, v: number) => sum + v, 0) / 3 > 3 ? 1 : 0,
+      scores.slice(6, 9).reduce((sum: number, v: number) => sum + v, 0) / 3 > 3 ? 1 : 0,
     ];
     setAverage(averageScore);
     setAnimal(animals.find(a => a.score.filter((s, i) => s === averageScore[i]).length === 3) || { type: '', score: [], img: '' });
