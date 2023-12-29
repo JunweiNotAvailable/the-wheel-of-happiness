@@ -84,19 +84,23 @@ const Results: React.FC<MainProps> = ( props ) => {
             {/* <i className='fa-solid fa-bars'/> */}
             <i className='fa-solid fa-rotate-right' onClick={() => setIsReseting(true)}/>
           </div>
-          {/* pie chart */}
-          <div className='center' style={{ marginTop: 24 }}>
-            <div className='wheel-container'>
-              <div style={{ textAlign: 'center', fontWeight: 600 }}>The Wheel of Happiness</div>
-              <PolarArea data={chartData} title='The Wheel of Happiness' options={chartOptions}/>
+          <div className='results-content'>
+            {/* pie chart */}
+            <div className='center wheel-section'>
+              <div className='wheel-container'>
+                <div style={{ textAlign: 'center', fontWeight: 600 }}>The Wheel of Happiness</div>
+                <PolarArea data={chartData} title='The Wheel of Happiness' options={chartOptions}/>
+              </div>
+            </div>
+            {/* animal */}
+            <div className='animal-section'>
+              <div style={{ fontSize: 18, fontWeight: 600, textAlign: 'center' }}><span style={{ fontWeight: 400, fontSize: 16 }}>你是</span> {t(animal.type)}</div>
+              <div className='center'>
+                <img className='animal-img' alt='' style={{ margin: '8px 0' }} src={`./images/${animal.img}`}/>
+              </div>
+              <div style={{ margin: '12px 24px', textAlign: 'center' }}>{t(`${animal.type}_description`)}</div>
             </div>
           </div>
-          {/* animal */}
-          <div style={{ fontSize: 18, fontWeight: 600, textAlign: 'center' }}><span style={{ fontWeight: 400, fontSize: 16 }}>你是</span> {t(animal.type)}</div>
-          <div className='center'>
-            <img className='animal-img' alt='' style={{ margin: '8px 0' }} src={`./images/${animal.img}`}/>
-          </div>
-          <div style={{ margin: '12px 24px', textAlign: 'center' }}>{t(`${animal.type}_description`)}</div>
         </div>
 
       </div>

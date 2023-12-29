@@ -58,13 +58,13 @@ const Process: React.FC<MainProps> = ( props ) => {
 
   return (
     <>
+      {/* background */}
+      <img className='background' alt='' src={`./images/${props.page <= 3 ? 'health.jpg' : props.page <= 6 ? 'relationships.png' : 'work.png'}`}/>
       <div className='main-screen relative'>
 
-        {/* background */}
-        <img className='background' alt='' src={`./images/${props.page <= 3 ? 'health.jpg' : props.page <= 6 ? 'relationships.png' : 'work.png'}`}/>
 
         {/* main components */}
-        <div className='progress-screen absolute' style={{ top: 0, left: 0, width: '100%', height: '100%', background: '#ffffffdd' }}>
+        <div className='progress-screen absolute' style={{ background: '#ffffffdd' }}>
           {/* top section */}
           <div className='top-section flex align-center'>
             {/* <i className='fa-solid fa-bars'/> */}
